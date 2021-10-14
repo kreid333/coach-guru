@@ -10,6 +10,31 @@ body {
   min-width: 320px;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.375;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.375;
+  padding: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.625;
+  min-height: 1rem;
+  padding: 10px;
+}
+
+i {
+  font-size: 4vw;
+}
+
 /* HERO */
 .hero {
   min-height: 100vh;
@@ -33,14 +58,6 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.375;
-  padding: 10px;
-}
-
-.hero-paragraph {
-  color: #666666;
-  font-size: 1rem;
-  line-height: 1.625;
-  min-height: 1rem;
   padding: 10px;
 }
 
@@ -82,6 +99,37 @@ body {
   width: 100%;
 }
 
+/* WHY SECTION */
+.why {
+  width: 100%;
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 6vw 0;
+}
+
+.reason {
+  padding-top: 3vw;
+  padding-right: 1vw;
+  padding-bottom: 1vw;
+  padding-left: 1vw;
+}
+
+.fas.fa-medkit {
+  color: #8991DC;
+}
+
+.far.fa-credit-card {
+  color: #69A1AC;
+}
+
+.fas.fa-heart {
+  color: #DB2721;
+}
+
+.fas.fa-smile {
+  color: #FF9B21;
+}
+
 /* UTILITIES */
 .grid {
   display: grid;
@@ -91,14 +139,30 @@ body {
   grid-template-columns: 3fr 2fr;
 }
 
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .padding {
   padding: 10px;
+}
+
+.grey {
+  color: #666666;
+}
+
+.dark {
+  color: #444444;
 }
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
     .grid-2 {
         grid-template-columns: 1fr;
+    }
+
+    .grid-4 {
+      grid-template-columns: 1fr 1fr;
     }
 
     .hero-title {
@@ -114,8 +178,22 @@ body {
     }
 
     .hero-image img {
-        width: 70%;
+        width: 60%;
         justify-self: center;
         align-self: center;
     }
+
+    i {
+      font-size: 6vw;
+    }
+}
+
+@media (max-width: 576px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  i {
+    font-size: max(10vw, 32px);
+  }
 }
