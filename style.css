@@ -361,6 +361,10 @@ transition: all 0.25s ease-in-out;
     font-size: 6vw;
   }
 
+  .why-title {
+    font-size: 1.875rem;
+  }
+
   /* TESTIMONIAL SECTION */
   .testimonial-container {
     width: 100%;
@@ -393,6 +397,15 @@ transition: all 0.25s ease-in-out;
     width: 60%;
     justify-self: center;
     align-self: center;
+  }
+
+  /* FOOTER */
+  .footer-title {
+    font-size: 1.875rem;
+  }
+
+  .footer-button {
+    width: 100%;
   }
 }
 
