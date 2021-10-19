@@ -11,18 +11,19 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  font-size: 2.5rem;
+h1,
+h3 {
   font-weight: 700;
   line-height: 1.375;
   padding: 10px;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
 h3 {
   font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.375;
-  padding: 10px;
 }
 
 p {
@@ -66,23 +67,8 @@ strong {
   padding: 10px;
 }
 
-.hero-button {
-  width: fit-content;
-  padding: 10px;
-}
-
 .hero-button button {
-  width: 100%;
-  padding: 12px 48px;
   background-color: #2b44ff;
-  color: #fff;
-  font-size: 1.25rem;
-  font-weight: 600;
-  text-transform: capitalize;
-  text-align: center;
-  border: none;
-  border-radius: 50px;
-  transition: all 0.25s ease-in-out;
 }
 
 .hero-button button:hover {
@@ -224,23 +210,8 @@ strong {
   text-align: center;
 }
 
-.footer-button {
-  width: fit-content;
-  padding: 10px;
-}
-
 .footer-button button {
-  width: 100%;
-  padding: 12px 48px;
   background-color: #191847;
-  color: #fff;
-  font-size: 1.25rem;
-  font-weight: 600;
-  text-transform: capitalize;
-  text-align: center;
-  border: none;
-  border-radius: 50px;
-  transition: all 0.25s ease-in-out;
 }
 
 .footer-button button:hover {
@@ -256,13 +227,13 @@ strong {
 }
 
 .social-links a {
-display: flex;
-justify-content: center;
-align-items: center;
-text-decoration: none;
-width: 48px;
-height: 48px;
-transition: all 0.25s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  transition: all 0.25s ease-in-out;
 }
 
 .social-links a .fab {
@@ -300,6 +271,24 @@ transition: all 0.25s ease-in-out;
   padding: 10px;
 }
 
+.button {
+  width: fit-content;
+  padding: 10px;
+}
+
+.button button {
+  width: 100%;
+  padding: 12px 48px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.25s ease-in-out;
+}
+
 .grey {
   color: #666666;
 }
@@ -311,12 +300,11 @@ transition: all 0.25s ease-in-out;
 .arrow-down {
   position: absolute;
   top: 0;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  
-  border-top: 20px solid #FFFFFF;
+  border-top: 20px solid #ffffff;
 }
 
 /* MEDIA QUERIES */
